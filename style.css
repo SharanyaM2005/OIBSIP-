@@ -6,123 +6,108 @@
 }
 
 body{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background:linear-gradient(135deg,#667eea,#764ba2);
-}
-
-h1{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color:white;
-    margin-bottom:25px;
-    font-size:36px;
-    letter-spacing:2px;
-    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+    line-height:1.7;
 }
 
-.calculator{
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+header{
+    text-align:center;
+    padding:50px 20px;
 }
 
-#display{
-    width:100%;
-    height:70px;
-    border:none;
-    outline:none;
-    border-radius:12px;
-    margin-bottom:20px;
-    padding:15px;
-    font-size:28px;
-    text-align:right;
-    background:white;
-    color:#333;
+header h1{
+    font-size:50px;
+    margin-bottom:10px;
+    color:#ffd700;
 }
 
-.buttons{
-    display:grid;
-    grid-template-columns:repeat(4,70px);
-    gap:15px;
-}
-
-button{
-    width:70px;
-    height:70px;
-    border:none;
-    border-radius:15px;
+header p{
     font-size:22px;
-    cursor:pointer;
-    background:white;
-    transition:all 0.3s ease;
-    font-weight:bold;
+    color:#f5f5f5;
 }
 
-button:hover{
-    transform:translateY(-3px);
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+.hero{
+    display:flex;
+    justify-content:center;
+    margin:20px;
 }
 
-button:active{
-    transform:scale(0.95);
+.hero img{
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    transition:0.4s;
 }
 
-/* Clear Button */
-button:nth-child(1){
-    background:#ff4d4d;
-    color:white;
+.hero img:hover{
+    transform:scale(1.05);
 }
 
-/* Backspace Button */
-button:nth-child(2){
-    background:#ff9800;
-    color:white;
+.about,
+.achievements,
+.quote{
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* Operator Buttons */
-button:nth-child(4),
-button:nth-child(8),
-button:nth-child(12),
-button:nth-child(16){
-    background:#4caf50;
-    color:white;
+.about h2,
+.achievements h2,
+.quote h2{
+    color:#ffd700;
+    margin-bottom:20px;
 }
 
-/* Equal Button */
-button:nth-child(19){
-    background:#2196f3;
-    color:white;
+.about p,
+.quote p{
+    font-size:18px;
+    text-align:justify;
 }
 
-/* Responsive */
-@media (max-width:500px){
+ul{
+    margin-left:25px;
+}
 
-    h1{
-        font-size:28px;
-    }
+li{
+    margin-bottom:12px;
+    font-size:18px;
+}
 
-    .calculator{
-        padding:20px;
-    }
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    background:#111;
+}
 
-    .buttons{
-        grid-template-columns:repeat(4,60px);
-        gap:10px;
-    }
+footer p{
+    color:#fff;
+}
 
-    button{
-        width:60px;
-        height:60px;
-        font-size:20px;
-    }
+@media(max-width:768px){
 
-    #display{
-        height:60px;
-        font-size:24px;
-    }
+header h1{
+    font-size:35px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.hero img{
+    width:220px;
+}
+
+.about,
+.achievements,
+.quote{
+    margin:20px;
+    padding:20px;
+}
+
 }

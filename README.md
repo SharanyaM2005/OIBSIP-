@@ -1,34 +1,26 @@
-# Modern Calculator
+# Tribute Page - Dr. A. P. J. Abdul Kalam
 
 ## 📌 Project Overview
-A modern calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations with a clean, responsive, and user-friendly interface.
+A responsive tribute page dedicated to Dr. A. P. J. Abdul Kalam, the Missile Man of India. The webpage highlights his life, achievements, and inspirational quote using a modern and attractive design.
 
 ## ✨ Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Percentage
-- Clear (C)
-- Backspace (⌫)
-- Keyboard Support
 - Responsive Design
-- Modern Glassmorphism UI
+- Modern UI
+- Biography Section
+- Achievements Section
+- Inspirational Quote
+- High-quality Image
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 - HTML5
 - CSS3
-- JavaScript
-
-## 📷 Screenshot
-(Add a screenshot of your calculator here after uploading to GitHub.)
 
 ## 📂 Project Structure
 ```
-WebDev-L2-Calculator/
+Tribute-Page/
 │── index.html
 │── style.css
-│── script.js
+│── kalam.jpg
 │── README.md
 ```
 
