@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+h1{
+    color:white;
+    margin-bottom:25px;
+    font-size:36px;
+    letter-spacing:2px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.calculator{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+#display{
+    width:100%;
+    height:70px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    margin-bottom:20px;
+    padding:15px;
+    font-size:28px;
+    text-align:right;
+    background:white;
+    color:#333;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,70px);
+    gap:15px;
+}
+
+button{
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:15px;
+    font-size:22px;
+    cursor:pointer;
+    background:white;
+    transition:all 0.3s ease;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+/* Clear Button */
+button:nth-child(1){
+    background:#ff4d4d;
+    color:white;
+}
+
+/* Backspace Button */
+button:nth-child(2){
+    background:#ff9800;
+    color:white;
+}
+
+/* Operator Buttons */
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16){
+    background:#4caf50;
+    color:white;
+}
+
+/* Equal Button */
+button:nth-child(19){
+    background:#2196f3;
+    color:white;
+}
+
+/* Responsive */
+@media (max-width:500px){
+
+    h1{
+        font-size:28px;
+    }
+
+    .calculator{
+        padding:20px;
+    }
+
+    .buttons{
+        grid-template-columns:repeat(4,60px);
+        gap:10px;
+    }
+
+    button{
+        width:60px;
+        height:60px;
+        font-size:20px;
+    }
+
+    #display{
+        height:60px;
+        font-size:24px;
+    }
+}
